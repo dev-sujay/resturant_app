@@ -1,0 +1,94 @@
+{
+    "categories": [
+        {
+            "name": "Starter",
+            "image": "https://res.cloudinary.com/da5mimn3m/image/upload/v1712845489/restaurant/categories/starter_k4qox1.jpg"
+        },
+        {
+            "name": "Main Course",
+            "image": "https://res.cloudinary.com/da5mimn3m/image/upload/v1712845489/restaurant/categories/main_js3zmj.jpg"
+        },
+        {
+            "name": "Dessert",
+            "image": "https://res.cloudinary.com/da5mimn3m/image/upload/v1712845489/restaurant/categories/desert_yjg2vl.png"
+        },
+        {
+            "name": "Drinks",
+            "image": "https://res.cloudinary.com/da5mimn3m/image/upload/v1712845488/restaurant/categories/drinks_bfqwr4.jpg"
+        },
+        {
+            "name": "Indian",
+            "image": "https://res.cloudinary.com/da5mimn3m/image/upload/v1712845488/restaurant/categories/indian_edtpzb.jpg"
+        },
+        {
+            "name": "Chinese",
+            "image": "https://res.cloudinary.com/da5mimn3m/image/upload/v1712845488/restaurant/categories/chinese_y0rzjf.jpg"
+        },
+        {
+            "name": "Italian",
+            "image": "https://res.cloudinary.com/da5mimn3m/image/upload/v1712845489/restaurant/categories/italian_zertlr.jpg"
+        }
+    ],
+    "offers": [
+        {
+            "title": "Buy 1 Get 1 Free",
+            "description": "Buy 1 Get 1 Free on all orders above Rs. 500",
+            "percentage": 20,
+            "discountRule": "Buy 1 Get 1 Free"
+        },
+        {
+            "title": "Flat 20% Off",
+            "description": "Flat 20% Off on all orders above Rs. 500",
+            "percentage": 20,
+            "discountRule": "Flat 20% Off"
+        },
+        {
+            "title": "Flat 30% Off",
+            "description": "Flat 30% Off on all orders above Rs. 1000",
+            "percentage": 30,
+            "discountRule": "Flat 30% Off"
+        },
+        {
+            "title": "Flat 50% Off",
+            "description": "Flat 50% Off on all orders above Rs. 2000",
+            "percentage": 50,
+            "discountRule": "Flat 50% Off"
+        }
+    ],
+    "offerCardGradients" : [
+        {
+            "startColor": "#D4145A",
+            "endColor": "#FBB03B"
+        },
+        {
+            "startColor": "#614385",
+            "endColor": "#516395"
+        },
+        {
+            "startColor": "#02AABD",
+            "endColor": "#00CDAC"
+        },
+        {
+            "startColor": "#C33764",
+            "endColor": "#92EFFD"
+        }
+    ],
+    "mostPopularFoods" : [
+        {
+            "name": "Paneer Butter Masala",
+            "image": "https://www.livingsmartandhealthy.com/wp-content/uploads/2023/06/paneer-butter-masala-recipe.jpg",
+            "price": 200,
+            "rating": 4.5,
+            "discountedPrice": 160,
+            "foodDesc" : "Paneer Butter Masala is a rich and creamy dish of paneer (cottage cheese) in a tomato, butter and cashew sauce. It is a popular Indian dish that is served in most Indian restaurants."
+        },
+        {
+            "name": "Chicken Biryani",
+            "image": "https://glebekitchen.com/wp-content/uploads/2019/12/chickenbiryanibowltop.jpg",
+            "price": 250,
+            "rating": 5,
+            "discountedPrice": 200,
+            "foodDesc" : "Chicken Biryani is a delicious savory rice dish that is loaded with spicy marinated chicken, caramelized onions, and flavorful saffron rice."
+        }
+    ]
+}
