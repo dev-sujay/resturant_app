@@ -1,17 +1,25 @@
 import { View, StyleSheet, Text, Pressable, ScrollView, Image, Platform } from 'react-native'
-import React from 'react'
+import React, { useCallback } from 'react'
 import ScreenWrapper from '../components/ScreenWrapper'
 import { Avatar, Card } from 'react-native-paper'
 import { AntDesign } from '@expo/vector-icons';
-import { repeatItems, toast } from '../utils/utils';
+import { toast } from '../utils/utils';
 import { Searchbar } from 'react-native-paper';
 import dummy from "../utils/dummy.json"
 import OfferCard from '../components/OfferCard';
 import FoodCard from '../components/FoodCard';
+import { useFocusEffect } from '@react-navigation/native';
+import { getAPI } from '../apis/apiRequests';
 
 const Home = () => {
   const [categories, setCategories] = React.useState(dummy.categories)
   const [offers, setOffers] = React.useState(dummy.offers)
+
+  useFocusEffect(
+    useCallback(() => {
+       getAPI("/category", {}, false, setCategories)
+    }, [])
+  )
 
   return (
     <ScreenWrapper>
@@ -35,7 +43,7 @@ const Home = () => {
           }} />
         </View>
       </View>
-      <ScrollView showsVerticalScrollIndicator={false}>
+      <ScrollView showsVerticalScrollIndicator={false} >
         <View style={styles.searchbarContainer}>
           <Searchbar
             placeholder="Search for dishes..."
@@ -73,9 +81,7 @@ const Home = () => {
           <Text style={styles.sectionHeader}>Most Popular</Text>
           {
             dummy.mostPopularFoods.map((food) => (
-              <Pressable key={food.name}>
-              <FoodCard name={food.name} image={food.image} price={food.price} rating={food.rating} discountedPrice={food.discountedPrice} foodDesc={food.foodDesc} />
-              </Pressable>
+              <FoodCard key={food.name} name={food.name} image={food.image} price={food.price} rating={food.rating} discountedPrice={food.discountedPrice} foodDesc={food.foodDesc} />
             ))
           }
         </View>
@@ -118,8 +124,8 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   categoryImage: {
-    width: 70,
-    height: 70,
+    width: 65,
+    height: 65,
     borderRadius: 10,
   },
   categoryText: {

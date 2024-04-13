@@ -80,7 +80,7 @@
             "price": 200,
             "rating": 4.5,
             "discountedPrice": 160,
-            "foodDesc" : "Paneer Butter Masala is a rich and creamy dish of paneer (cottage cheese) in a tomato, butter and cashew sauce. It is a popular Indian dish that is served in most Indian restaurants."
+            "foodDesc" : "Paneer Butter Masala is a rich and creamy dish of paneer (cottage cheese) in a tomato, butter and cashew sauce."
         },
         {
             "name": "Chicken Biryani",
@@ -88,7 +88,7 @@
             "price": 250,
             "rating": 5,
             "discountedPrice": 200,
-            "foodDesc" : "Chicken Biryani is a delicious savory rice dish that is loaded with spicy marinated chicken, caramelized onions, and flavorful saffron rice."
+            "foodDesc" : "Chicken Biryani is a delicious savory rice dish that is loaded with spicy marinated chicken, caramelized onions."
         }
     ]
 }
